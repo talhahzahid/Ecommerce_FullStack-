@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-around items-center mt-10 px-5">
+    <nav className="flex justify-around items-center mt-8 px-5">
       <div className="logo">
         <Image src={logo} alt="Logo" width={134} height={44} />
       </div>

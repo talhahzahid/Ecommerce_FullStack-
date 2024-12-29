@@ -1,5 +1,6 @@
 import React from "react";
 import banner from "/public/Offer Banner.png";
+import logo from "@/public/logo.png";
 import mainimage from "@/public/main-image.png";
 import shipping from "@/public/shipping.png";
 import refund from "@/public/refund.png";
@@ -11,12 +12,13 @@ import vector from "@/public/Vector.png";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Components/Card";
+import brand from "@/public/Brands.png";
 
 const page = () => {
   return (
     <>
-      <div className="h-[700vh]">
-        <div className="mt-4">
+      <div>
+        <div className="mt-7">
           <Image src={banner} alt="banner" width={1918.48} height={653.73} />
         </div>
 
@@ -191,10 +193,117 @@ const page = () => {
         </div>
         {/* featured section end */}
         {/* search section start */}
-        <div className="text-center">
-          <input type="text" name="" className="border border-[#40BFFF] p-2  w-full max-w-xs" />
+        <div className="text-center mt-[4rem]">
+          <input
+            type="text"
+            id=""
+            className="border border-[#40BFFF] p-2  w-full max-w-lg"
+            placeholder="Serach Qurey"
+          />
+          <button className="border  border-[#40BFFF] bg-[#40BFFF] p-2">
+            Search
+          </button>
         </div>
         {/* search section end */}
+        {/* footer section start */}
+        <div className="border border-[#BCDDFE] bg-[#BCDDFE] mt-10 h-[80vh]">
+          <div className="flex justify-around m-10">
+            <div>
+              <Image src={logo} alt="loading.." />
+              <h2 className="mt-2">
+                Lorem Ipsum is simply dummy text of the <br /> printing and
+                typesetting industry. Lorem <br /> Ipsum has been the industry's
+                standard <br /> dummy text ever.Since the 1500s, when <br /> an
+                unknown printer.
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-2xl">Follow Us</h1>
+              <h2 className="mt-2">
+                Lorem Ipsum is simply dummy text of the <br /> printing and
+                typesetting industry. Lorem <br /> Ipsum has been the industry's
+                standard <br /> dummy text ever.Since the 1500s, when <br /> an
+                unknown printer.
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-2xl">Contact Us</h1>
+              <h2 className="mt-2">
+                Lorem Ipsum is simply dummy text of the <br /> printing and
+                typesetting industry. Lorem <br /> Ipsum has been the industry's
+                standard <br /> dummy text ever.Since the 1500s, when <br /> an
+                unknown printer.
+              </h2>
+            </div>
+          </div>
+          <br />
+          <div className="flex justify-around m-2">
+            <div>
+              <h1 className="text-xl font-semibold">Information</h1>
+              <h2 className="mt-2">
+                <Link href="">About Us</Link>
+              </h2>
+              <h2>
+                <Link href="">Information</Link>
+              </h2>
+              <h2>
+                <Link href="">Privacy Policy</Link>
+              </h2>
+              <h2>
+                <Link href="">Term $ condition</Link>
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-xl font-semibold">About Us</h1>
+              <h2 className="mt-2">
+                <Link href="">About Us</Link>
+              </h2>
+              <h2>
+                <Link href="">Information</Link>
+              </h2>
+              <h2>
+                <Link href="">Privacy Policy</Link>
+              </h2>
+              <h2>
+                <Link href="">Term $ condition</Link>
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-xl font-semibold"> My Account</h1>
+              <h2 className="mt-2">
+                <Link href="">About Us</Link>
+              </h2>
+              <h2>
+                <Link href="">Information</Link>
+              </h2>
+              <h2>
+                <Link href="">Privacy Policy</Link>
+              </h2>
+              <h2>
+                <Link href="">Term $ condition</Link>
+              </h2>
+            </div>
+            <div>
+              <h1 className="text-xl font-semibold">Our Offer</h1>
+              <h2 className="mt-2">
+                <Link href="">About Us</Link>
+              </h2>
+              <h2>
+                <Link href="">Information</Link>
+              </h2>
+              <h2>
+                <Link href="">Privacy Policy</Link>
+              </h2>
+              <h2>
+                <Link href="">Term $ condition</Link>
+              </h2>
+            </div>
+          </div>
+          <div className="mt-[4rem] flex justify-end">
+            <Image src={brand} alt="loading.." />
+          </div>
+        </div>
+        {/* footer section end */}
       </div>
     </>
   );
