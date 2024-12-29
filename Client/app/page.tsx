@@ -4,6 +4,10 @@ import mainimage from "@/public/main-image.png";
 import shipping from "@/public/shipping.png";
 import refund from "@/public/refund.png";
 import path from "@/public/Path 4.png";
+import figma from "@/public/figma-1-logo 1.png";
+import nike from "@/public/Nike_logo_emblem_logotype 1.png";
+import kronos from "@/public/kronos-logo-1-1 1.png";
+import vector from "@/public/Vector.png";
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Components/Card";
@@ -110,7 +114,87 @@ const page = () => {
         <h1 className="text-center mt-[4rem] text-xl font-semibold">
           LATEST NEWS
         </h1>
+        <div className="flex justify-around flex-wrap gap-8 mt-10">
+          <div className="flex items-center">
+            <Image src={nike} alt="loading..." />
+            <div>
+              <h1 className="text-xl font-semibold">Fashion Industry</h1>
+              <h2>
+                Lorem Ipsum is simply <br /> dummy text of the <br /> printing
+                and typesetting <br />
+                industry.
+              </h2>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <Image src={figma} alt="loading..." />
+            <div>
+              <h1 className="text-xl font-semibold">Fashion Industry</h1>
+              <h2>
+                Lorem Ipsum is simply <br /> dummy text of the <br /> printing
+                and typesetting <br />
+                industry.
+              </h2>
+            </div>
+          </div>
+          <div className="flex items-center">
+            <Image src={kronos} alt="loading..." />
+            <div>
+              <h1 className="text-xl font-semibold">Fashion Industry</h1>
+              <h2>
+                Lorem Ipsum is simply <br /> dummy text of the <br /> printing
+                and typesetting <br />
+                industry.
+              </h2>
+            </div>
+          </div>
+        </div>
         {/* news section end */}
+        {/* featured section start */}
+        <h1 className="text-center mt-[4rem] text-xl font-semibold">
+          FEATURED PRODUCTS
+        </h1>
+        <div className="flex justify-around flex-wrap mt-[4rem]">
+          <div className="flex items-center gap-7">
+            <Image src={vector} alt="loading../" />
+            <div>
+              <h1>
+                Blue Swade Nike <br /> Sneakers
+              </h1>
+              <h2>
+                $499 <span className="text-red-400 line-through">$999</span>
+              </h2>
+            </div>
+          </div>
+          <div className="flex items-center gap-7">
+            <Image src={vector} alt="loading../" />
+            <div>
+              <h1>
+                Blue Swade Nike <br /> Sneakers
+              </h1>
+              <h2>
+                $499 <span className="text-red-400 line-through">$999</span>
+              </h2>
+            </div>
+          </div>
+          <div className="flex items-center gap-7">
+            <Image src={vector} alt="loading../" />
+            <div>
+              <h1>
+                Blue Swade Nike <br /> Sneakers
+              </h1>
+              <h2>
+                $499 <span className="text-red-400 line-through">$999</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        {/* featured section end */}
+        {/* search section start */}
+        <div className="text-center">
+          <input type="text" name="" className="border border-[#40BFFF] p-2  w-full max-w-xs" />
+        </div>
+        {/* search section end */}
       </div>
     </>
   );
