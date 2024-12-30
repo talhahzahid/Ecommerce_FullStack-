@@ -11,7 +11,7 @@ const Navbar = () => {
       </div>
       <div>
         <div className="flex gap-[4rem] text-mx">
-          <Link href="/home" className="hover:text-[#40BFFF]">
+          <Link href="/" className="hover:text-[#40BFFF]">
             HOME
           </Link>
           <Link href="/about" className="hover:text-[#40BFFF]">
@@ -27,6 +27,11 @@ const Navbar = () => {
             CONTACT
           </Link>
         </div>
+      </div>
+      <div>
+        <button className="btn btn-error text-white">
+          <Link href="/Login">Login</Link>
+        </button>
       </div>
     </nav>
   );
