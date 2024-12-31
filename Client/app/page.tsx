@@ -1,10 +1,7 @@
 import React from "react";
 import banner from "/public/Offer Banner.png";
 import logo from "@/public/logo.png";
-import mainimage from "@/public/main-image.png";
-import shipping from "@/public/shipping.png";
-import refund from "@/public/refund.png";
-import path from "@/public/Path 4.png";
+import mainimage from "@/public/main-image.png";  
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Components/Card";
@@ -19,7 +16,7 @@ const page = () => {
     <>
       {/* // banner image  */}
       <div>
-        <div className="mt-7">
+        <div className="">
           <Image src={banner} alt="banner" width={1918.48} height={653.73} />
         </div>
 
