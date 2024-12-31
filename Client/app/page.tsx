@@ -25,26 +25,29 @@ const page = () => {
 
         {/* product section */}
         <div>
-          <h1 className="text-center text-xl mt-[3rem] font-bold">
-            BEST SELLER
-          </h1>
-          <div className="flex justify-center gap-[7rem] mt-7 text-lg ">
-            <h2 className="hover:text-[#40BFFF] hover:underline">
-              <Link href="">All</Link>
-            </h2>
-            <h2 className="hover:text-[#40BFFF] hover:underline">
-              <Link href="">Bags</Link>
-            </h2>
-            <h2 className="hover:text-[#40BFFF] hover:underline">
-              <Link href="">Sneakers</Link>
-            </h2>
-            <h2 className="hover:text-[#40BFFF] hover:underline">
-              <Link href="">Belts</Link>
-            </h2>
-            <h2 className="hover:text-[#40BFFF] hover:underline">
-              <Link href="">Sunglasses</Link>
-            </h2>
-          </div>
+        <div>
+  <h1 className="text-center text-xl mt-[3rem] font-bold">
+    BEST SELLER
+  </h1>
+  <div className="flex flex-wrap justify-center gap-[3rem] mt-7 text-lg">
+    <h2 className="hover:text-[#40BFFF] hover:underline">
+      <Link href="">All</Link>
+    </h2>
+    <h2 className="hover:text-[#40BFFF] hover:underline">
+      <Link href="">Bags</Link>
+    </h2>
+    <h2 className="hover:text-[#40BFFF] hover:underline">
+      <Link href="">Sneakers</Link>
+    </h2>
+    <h2 className="hover:text-[#40BFFF] hover:underline">
+      <Link href="">Belts</Link>
+    </h2>
+    <h2 className="hover:text-[#40BFFF] hover:underline">
+      <Link href="">Sunglasses</Link>
+    </h2>
+  </div>
+</div>
+
 
           <Card />
         </div>

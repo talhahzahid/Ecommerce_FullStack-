@@ -6,9 +6,9 @@ import brand from "@/public/Brands.png";
 const Fotter = () => {
   return (
     <>
-      <div className="border border-[#BCDDFE] bg-[#BCDDFE] mt-10 h-[80vh]">
+      <div className="border border-[#BCDDFE] bg-[#BCDDFE] mt-10 h-full">
         {/* Header Section */}
-        <div className="flex justify-around m-10">
+        <div className="flex justify-around m-10 flex-wrap">
           <div>
             <Image src={logo} alt="Logo" />
             <h2 className="mt-2">
@@ -44,7 +44,7 @@ const Fotter = () => {
         </div>
 
         {/* Links Section */}
-        <div className="flex justify-around m-2">
+        <div className="flex justify-around flex-wrap m-2">
           <div>
             <h1 className="text-xl font-semibold">Information</h1>
             <ul className="mt-2 space-y-2">
